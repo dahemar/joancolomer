@@ -1,0 +1,4 @@
+id,name,display_name,order,is_active,created_date,updated_date
+cat1,all,All,1,x,2024-01-01,2024-01-01
+cat2,commercial,Commercial,2,x,2024-01-01,2024-01-01
+cat3,music,Music Video,3,x,2024-01-01,2024-01-01

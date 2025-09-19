@@ -1,0 +1,30 @@
+id,title,description,poster_url,video_url,project_id,category,order,is_active,credits,created_date,updated_date
+video1,AMAIA - MAPS,Music video for AMAIA,https://imgur.com/example1.jpg,https://dropbox.com/example1.mp4,project1,music,1,x,Director: Joan Colomer,2024-01-01,2024-01-01
+video2,CIUTAT - I WANT TO STAY,Music video for CIUTAT,https://imgur.com/example2.jpg,https://dropbox.com/example2.mp4,project2,music,2,x,Director: Joan Colomer,2024-01-02,2024-01-02
+video3,CIUTAT - JUSTO AL OTRO LADO,Music video for CIUTAT,https://imgur.com/example3.jpg,https://dropbox.com/example3.mp4,project2,music,3,x,Director: Joan Colomer,2024-01-03,2024-01-03
+video4,MIRA FESTIVAL 24 AFTERMOVIE,Festival aftermovie,https://imgur.com/example4.jpg,https://dropbox.com/example4.mp4,project3,commercial,4,x,Director: Joan Colomer,2024-01-04,2024-01-04
+video5,SOGEXTURIZO - EL CORRIDO,Music video for SOGEXTURIZO,https://imgur.com/example5.jpg,https://dropbox.com/example5.mp4,project4,music,5,x,Director: Joan Colomer,2024-01-05,2024-01-05
+video6,GUITARRICADELAFUENTEXTROYESIVAN - PIPE DREAM REMIX,Music video remix,https://imgur.com/example6.jpg,https://dropbox.com/example6.mp4,project5,music,6,x,Director: Joan Colomer,2024-01-06,2024-01-06
+video7,MAGNA - CRUZ,Music video for MAGNA,https://imgur.com/example7.jpg,https://dropbox.com/example7.mp4,project6,music,7,x,Director: Joan Colomer,2024-01-07,2024-01-07
+video8,MAGNA - DEJALA LLORAR,Music video for MAGNA,https://imgur.com/example8.jpg,https://dropbox.com/example8.mp4,project6,music,8,x,Director: Joan Colomer,2024-01-08,2024-01-08
+video9,GABRIELA RICHARDSON - TI AMO,Music video for Gabriela Richardson,https://imgur.com/example9.jpg,https://dropbox.com/example9.mp4,project7,music,9,x,Director: Joan Colomer,2024-01-09,2024-01-09
+video10,MIA KHALIFA,Music video for MIA KHALIFA,https://imgur.com/example10.jpg,https://dropbox.com/example10.mp4,project8,music,10,x,Director: Joan Colomer,2024-01-10,2024-01-10
+video11,NAISEKUD - AMANTES DE VERDAD,Music video for NAISEKUD,https://imgur.com/example11.jpg,https://dropbox.com/example11.mp4,project9,music,11,x,Director: Joan Colomer,2024-01-11,2024-01-11
+video12,OMARMONTESXBBTRICKZ-YO-SOY-EL-MAS-MALO-DE-ESPANA,Music video for OMARMONTESXBBTRICKZ,https://imgur.com/example12.jpg,https://dropbox.com/example12.mp4,project10,music,12,x,Director: Joan Colomer,2024-01-12,2024-01-12
+video13,CAMPER AW24 - ABRAZO,Commercial video for CAMPER,https://imgur.com/example13.jpg,https://dropbox.com/example13.mp4,project11,commercial,13,x,Director: Joan Colomer,2024-01-13,2024-01-13
+video14,CAMPER AW24 - BIKE,Commercial video for CAMPER,https://imgur.com/example14.jpg,https://dropbox.com/example14.mp4,project11,commercial,14,x,Director: Joan Colomer,2024-01-14,2024-01-14
+video15,CAMPER AW24 - CHURCH,Commercial video for CAMPER,https://imgur.com/example15.jpg,https://dropbox.com/example15.mp4,project11,commercial,15,x,Director: Joan Colomer,2024-01-15,2024-01-15
+video16,CAMPER AW24 - MOCHILA,Commercial video for CAMPER,https://imgur.com/example16.jpg,https://dropbox.com/example16.mp4,project11,commercial,16,x,Director: Joan Colomer,2024-01-16,2024-01-16
+video17,CAMPER AW24 - PICK UP,Commercial video for CAMPER,https://imgur.com/example17.jpg,https://dropbox.com/example17.mp4,project11,commercial,17,x,Director: Joan Colomer,2024-01-17,2024-01-17
+video18,CAMPER AW24 - WATER,Commercial video for CAMPER,https://imgur.com/example18.jpg,https://dropbox.com/example18.mp4,project11,commercial,18,x,Director: Joan Colomer,2024-01-18,2024-01-18
+video19,FITZ JAMES STUART - 15 DIAS ABRIL,Commercial video for Fitz James Stuart,https://imgur.com/example19.jpg,https://dropbox.com/example19.mp4,project12,commercial,19,x,Director: Joan Colomer,2024-01-19,2024-01-19
+video20,FITZ JAMES STUART - HORARIO NOCTURNO,Commercial video for Fitz James Stuart,https://imgur.com/example20.jpg,https://dropbox.com/example20.mp4,project12,commercial,20,x,Director: Joan Colomer,2024-01-20,2024-01-20
+video21,FITZ JAMES STUART - MAIN,Commercial video for Fitz James Stuart,https://imgur.com/example21.jpg,https://dropbox.com/example21.mp4,project12,commercial,21,x,Director: Joan Colomer,2024-01-21,2024-01-21
+video22,FITZ JAMES STUART - NTFR,Commercial video for Fitz James Stuart,https://imgur.com/example22.jpg,https://dropbox.com/example22.mp4,project12,commercial,22,x,Director: Joan Colomer,2024-01-22,2024-01-22
+video23,FITZ JAMES STUART - UNSEEN,Commercial video for Fitz James Stuart,https://imgur.com/example23.jpg,https://dropbox.com/example23.mp4,project12,commercial,23,x,Director: Joan Colomer,2024-01-23,2024-01-23
+video24,GIMAGUAS BTS DROP 1,Behind the scenes video,https://imgur.com/example24.jpg,https://dropbox.com/example24.mp4,project13,commercial,24,x,Director: Joan Colomer,2024-01-24,2024-01-24
+video25,GIMAGUAS BTS DROP 2,Behind the scenes video,https://imgur.com/example25.jpg,https://dropbox.com/example25.mp4,project13,commercial,25,x,Director: Joan Colomer,2024-01-25,2024-01-25
+video26,GIMAGUAS BTS DROP 3,Behind the scenes video,https://imgur.com/example26.jpg,https://dropbox.com/example26.mp4,project13,commercial,26,x,Director: Joan Colomer,2024-01-26,2024-01-26
+video27,NOTHING - SCREENTEST,Experimental video,https://imgur.com/example27.jpg,https://dropbox.com/example27.mp4,project14,music,27,x,Director: Joan Colomer,2024-01-27,2024-01-27
+video28,NOTHING - STAIRS,Experimental video,https://imgur.com/example28.jpg,https://dropbox.com/example28.mp4,project14,music,28,x,Director: Joan Colomer,2024-01-28,2024-01-28
+video29,NOTHING - WASHING MACHINE,Experimental video,https://imgur.com/example29.jpg,https://dropbox.com/example29.mp4,project14,music,29,x,Director: Joan Colomer,2024-01-29,2024-01-29

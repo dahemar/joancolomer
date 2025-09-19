@@ -1,0 +1,11 @@
+key,value,description,updated_date
+site_title,joan colomer,Main site title,2024-01-01
+site_description,Portfolio of Joan Colomer - Music Videos and Commercial Work,SEO description,2024-01-01
+contact_email,hello@joancolomer.com,Contact email address,2024-01-01
+contact_phone,+34 123 456 789,Contact phone number,2024-01-01
+social_instagram,https://instagram.com/joancolomer,Instagram profile,2024-01-01
+social_vimeo,https://vimeo.com/joancolomer,Vimeo profile,2024-01-01
+social_behance,https://behance.net/joancolomer,Behance profile,2024-01-01
+videos_per_page,12,Number of videos per page,2024-01-01
+enable_archiving,true,Enable video archiving feature,2024-01-01
+default_filter,all,Default filter on page load,2024-01-01

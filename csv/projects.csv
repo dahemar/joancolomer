@@ -1,0 +1,15 @@
+id,title,description,type,order,is_active,created_date,updated_date
+project1,AMAIA - MAPS,Music video project for AMAIA,music,1,x,2024-01-01,2024-01-01
+project2,CIUTAT,Music video project for CIUTAT,music,2,x,2024-01-02,2024-01-02
+project3,MIRA FESTIVAL 24 AFTERMOVIE,Festival aftermovie project,commercial,3,x,2024-01-04,2024-01-04
+project4,SOGEXTURIZO - EL CORRIDO,Music video project for SOGEXTURIZO,music,4,x,2024-01-05,2024-01-05
+project5,GUITARRICADELAFUENTEXTROYESIVAN - PIPE DREAM REMIX,Music video remix project,music,5,x,2024-01-06,2024-01-06
+project6,MAGNA,Music video project for MAGNA,music,6,x,2024-01-07,2024-01-07
+project7,GABRIELA RICHARDSON - TI AMO,Music video project for Gabriela Richardson,music,7,x,2024-01-09,2024-01-09
+project8,MIA KHALIFA,Music video project for MIA KHALIFA,music,8,x,2024-01-10,2024-01-10
+project9,NAISEKUD - AMANTES DE VERDAD,Music video project for NAISEKUD,music,9,x,2024-01-11,2024-01-11
+project10,OMARMONTESXBBTRICKZ-YO-SOY-EL-MAS-MALO-DE-ESPANA,Music video project for OMARMONTESXBBTRICKZ,music,10,x,2024-01-12,2024-01-12
+project11,CAMPER AW24,Commercial campaign for CAMPER,commercial,11,x,2024-01-13,2024-01-13
+project12,FITZ JAMES STUART,Commercial campaign for Fitz James Stuart,commercial,12,x,2024-01-19,2024-01-19
+project13,GIMAGUAS FW25 BTS,Behind the scenes project for GIMAGUAS,commercial,13,x,2024-01-24,2024-01-24
+project14,NOTHING,Experimental video project,music,14,x,2024-01-27,2024-01-27
