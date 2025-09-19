@@ -46,9 +46,18 @@ Object.entries(imageModules).forEach(([path, url]) => {
   if (m) {
     key = m[1]
   }
+  
+  // Debug for OMARMONTESXBBTRICKZ
+  if (key.includes('OMARMONTESXBBTRICKZ')) {
+    console.log('Debug OMARMONTESXBBTRICKZ:', { path, key, file, hasProject: projectsMap.has(key) })
+  }
+  
   if (!projectsMap.has(key)) return
   if (!projectsMap.get(key).poster || /^poster\./i.test(file) || /_poster\./i.test(file)) {
     projectsMap.get(key).poster = url
+    if (key.includes('OMARMONTESXBBTRICKZ')) {
+      console.log('Assigned poster to OMARMONTESXBBTRICKZ:', url)
+    }
   }
 })
 
