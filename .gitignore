@@ -1,3 +1,7 @@
+# Ignore video files except in assets folder
 *.mp4
 *.webm
 *.mov
+!assets/*.mp4
+!assets/*.webm
+!assets/*.mov
