@@ -265,18 +265,137 @@ a {
   .sidebar { position: static; }
   /* Brand fixed at top-left on mobile */
   .brand { position: fixed; top: 14px; left: 24px; }
+  
+  /* Ensure v1 works correctly */
+  body[data-version="1"] .index2-topbar { 
+    display: none !important; 
+  }
+  
+  /* Desktop: version 2 should be exactly like version 1 */
+  @media (min-width: 861px) {
+    /* Hide custom mobile topbar */
+    body[data-version="2"] .index2-topbar { 
+      display: none !important; 
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    body[data-version="2"] .index2-topbar .links {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    body[data-version="2"] .index2-topbar .links-right {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    
+    /* Move topbar 108px to the left in v2 desktop */
+    body[data-version="2"] .topbar {
+      padding: 0 !important;
+      margin: 0 !important;
+      transform: translateX(-108px) !important;
+    }
+    body[data-version="2"] .topbar .links {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    body[data-version="2"] .topbar .links-right {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+  
+  /* Mobile: version 2 has custom topbar */
+  @media (max-width: 860px) {
+    /* Hide original topbar in version 2 on mobile only */
+    body[data-version="2"] .topbar { display: none !important; }
+    
+    /* Show custom topbar for index2 on mobile only */
+    body[data-version="2"] .index2-topbar { 
+      display: flex !important; 
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding: 0 !important;
+      margin: 6px 0 0 0 !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    
+    body[data-version="2"] .index2-topbar .links {
+      display: flex !important;
+      gap: 16px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      padding-left: 24px !important;
+    }
+    
+    body[data-version="2"] .index2-topbar .links-right {
+      display: flex !important;
+      gap: 16px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      padding-right: 24px !important;
+    }
+  }
   /* Align modal media with grid margins on mobile (24px each side) */
   .modal video, .modal iframe { width: calc(100vw - 48px); max-height: 60vh; }
   .modal-header, .modal-footer { width: calc(100vw - 48px); padding: 0; }
 
-  /* Mobile top second row: left (work/contact) and right (edits/directed) */
-  .topbar { position: fixed; top: 36px; left: 0 !important; right: 0; background: transparent; padding: 6px 0; padding-left: 156px !important; display: flex; justify-content: space-between; transform: none !important; }
+  /* Mobile top bar: work/contact (left) and edits/directed (right) */
+  .topbar { 
+    position: fixed; 
+    top: 36px; 
+    left: 0 !important; 
+    right: 0; 
+    background: transparent; 
+    padding: 6px 12px; 
+    padding-left: 12px !important; 
+    display: grid !important; 
+    grid-template-columns: 1fr 1fr !important; 
+    gap: 16px;
+    transform: none !important; 
+    align-items: center;
+  }
+  
   /* Ensure same offset when class center-viewport is present */
-  .topbar.center-viewport { left: 0 !important; padding-left: 156px !important; transform: none !important; }
-  .topbar .links { margin-left: 0; transform: translateX(-132px) !important; }
-  /* Ensure right group sticks to the right edge on iOS Safari */
-  .topbar .links-right { margin-left: auto !important; transform: none !important; justify-content: flex-end; padding-right: 0; }
-  .filter-links { display: none; }
+  .topbar.center-viewport { 
+    left: 0 !important; 
+    padding-left: 12px !important; 
+    transform: none !important; 
+    position: fixed !important; 
+  }
+  
+  /* Left column: work/contact */
+  .topbar .links { 
+    grid-column: 1 !important; 
+    display: flex !important; 
+    gap: 16px; 
+    justify-content: flex-start !important; 
+    align-items: center;
+    margin: 0 !important;
+    transform: none !important;
+    padding-left: 12px;
+  }
+  
+  /* Right column: edits/directed */
+  .topbar .links-right { 
+    grid-column: 2 !important; 
+    display: flex !important; 
+    gap: 16px; 
+    justify-content: flex-end !important; 
+    align-items: center;
+    margin: 0 !important;
+    padding-right: 12px;
+  }
+  
+  /* Hide filter links on mobile - completely remove from layout */
+  .topbar .filter-links { 
+    display: none !important; 
+    grid-column: none !important; 
+    grid-row: none !important;
+    position: absolute !important;
+    left: -9999px !important;
+    visibility: hidden !important;
+  }
 
   /* Bottom filter bar */
   .mobile-filter-bar { position: fixed; bottom: 8px; left: 0; right: 0; display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 6px 12px; padding-top: 12px; padding-bottom: calc(6px + env(safe-area-inset-bottom)); background: #fff; z-index: 2100; }
@@ -316,7 +435,3 @@ a {
   .center-viewport { left: 0; }
 }
 
-/* Fix alignment for mobile view (both desktop simulation and real mobile) */
-@media screen and (max-width: 860px) {
-  .topbar .links-right { padding-right: 0; }
-}

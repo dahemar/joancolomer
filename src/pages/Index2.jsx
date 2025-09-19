@@ -1,7 +1,7 @@
 import { NavLink, Outlet, RouterProvider, createBrowserRouter, Navigate, useLocation } from 'react-router-dom'
-import Edits from './pages/Edits'
-import Directed from './pages/Directed'
-import Contact from './pages/Contact'
+import Edits from './Edits'
+import Directed from './Directed'
+import Contact from './Contact'
 
 function Layout() {
   return (
@@ -28,7 +28,8 @@ function Work() {
   
   return (
     <div>
-      <div className="topbar center-viewport">
+      {/* Original topbar for desktop, custom for mobile */}
+      <div className="topbar">
         <div className="links">
           <NavLink to="/work" className={({ isActive }) => isActive ? 'active' : undefined}>work</NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : undefined}>contact</NavLink>
@@ -40,6 +41,17 @@ function Work() {
             <a href="edits?f=music" className={getFilterClass('music')}>music video</a>
           </div>
         )}
+        <div className="links links-right">
+          <NavLink to="edits" end className={({ isActive }) => `tab ${isActive ? 'active' : ''}`}>edits</NavLink>
+          <NavLink to="directed" className={({ isActive }) => `tab ${isActive ? 'active' : ''}`}>directed</NavLink>
+        </div>
+      </div>
+      {/* Custom mobile topbar */}
+      <div className="topbar index2-topbar">
+        <div className="links">
+          <NavLink to="/work" className={({ isActive }) => isActive ? 'active' : undefined}>work</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : undefined}>contact</NavLink>
+        </div>
         <div className="links links-right">
           <NavLink to="edits" end className={({ isActive }) => `tab ${isActive ? 'active' : ''}`}>edits</NavLink>
           <NavLink to="directed" className={({ isActive }) => `tab ${isActive ? 'active' : ''}`}>directed</NavLink>
@@ -58,14 +70,13 @@ function Work() {
 }
 
 const basename = import.meta.env.PROD ? '/joancolomer' : undefined
-console.log('Router basename:', basename, 'PROD:', import.meta.env.PROD)
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      { index: true, element: <Navigate to="/work" replace /> },
+      { index: true, element: <Navigate to="work" replace /> },
       {
         path: 'work',
         element: <Work />,
@@ -98,6 +109,6 @@ const router = createBrowserRouter([
   },
 ], { basename })
 
-export default function App() {
+export default function Index2() {
   return <RouterProvider router={router} />
 }
